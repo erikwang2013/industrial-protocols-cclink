@@ -15,7 +15,7 @@ class CcLinkTest extends TestCase
     {
         $p = new CcLinkProtocol();
         $this->assertSame('cc-link', $p->getName());
-        $this->assertSame('1.0.0', $p->getVersion());
+        $this->assertSame('1.1.1', $p->getVersion());
         $this->assertContains('rs485', $p->getSupportedVariants());
         $this->assertSame(0, $p->getDefaultPort());
     }
